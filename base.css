@@ -1,0 +1,476 @@
+/*CSS reset*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+1. 清除浏览器自带样式 内外边距 << 
+2. 使盒模型为盒子大小          <<
+即：box-sizing: border-box;    <<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html,
+body,
+div,
+dl,
+dt,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+section,
+header,
+main,
+footer,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+   清除表格样式                << 
+                               <<
+                               <<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+fieldset,
+img {
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+清除几个常用字体标签的字体样式 << 
+                               <<
+                               <<
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+i,
+em,
+b {
+    font-style: normal;
+}
+
+address,
+caption,
+cite,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*文字排版=======================================================================*/
+
+.f0 {
+    font-size: 0px;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.indent2 {
+    text-indent: 2em;
+}
+
+.logo-indent {
+    text-indent: -9999em;
+}
+
+.td-udl {
+    text-decoration: underline;
+}
+
+.td-th {
+    text-decoration: line-through;
+}
+
+.td-no {
+    text-decoration: none;
+}
+
+
+/* =====文字定位===================================================================================*/
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.box-c {
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+    /*解决IE双边距*/
+    display: inline;
+}
+
+.fr {
+    float: right;
+    display: inline;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear {
+    zoom: 1;
+}
+/* 基线对其方式======================= */
+.vm {
+    vertical-align: middle;
+}
+
+.pr {
+    position: relative;
+}
+
+.pa {
+    position: absolute;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.oh {
+    overflow: hidden;
+}
+
+
+/*====块类型========================================*/
+
+.db {
+    display: block;
+}
+
+.di {
+    display: inline;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.dn {
+    display: none;
+}
+
+
+/*=marin-top====================================================*/
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt25 {
+    margin-top: 25px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+
+/*=marin-left====================================================*/
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml25 {
+    margin-left: 25px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+
+/*=marin-right====================================================*/
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr25 {
+    margin-right: 25px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+
+/*=marin-bottom====================================================*/
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+
+/* ===padding-top============================== */
+
+.pt5 {
+    padding-top: 5px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pt25 {
+    padding-top: 25px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+
+/* ===padding-left============================== */
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pl15 {
+    padding-left: 15px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.pl25 {
+    padding-left: 25px;
+}
+
+.pl30 {
+    padding-left: 30px;
+}
+
+
+/* ===padding-right============================== */
+
+.pr5 {
+    padding-right: 5px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+.pr15 {
+    padding-right: 15px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.pr25 {
+    padding-right: 25px;
+}
+
+.pr30 {
+    padding-right: 30px;
+}
+
+
+/* ===padding-bottpm============================== */
+
+.pb5 {
+    padding-bottom: 5px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pb25 {
+    padding-bottom: 25px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+
+/*===鼠标样式========================================*/
+
+.cp {
+    cursor: pointer;
+}
+
+.cd {
+    cursor: default;
+}
